@@ -1,9 +1,15 @@
 {
   "Parameters": {
     "StageName": "prod",
-    "EndpointInstanceCount": "1",
-    "EndpointInstanceType": "ml.m5.large",
-    "SamplingPercentage": "80",
-    "EnableDataCapture": "true"
+    "EndpointInstanceCount": "2",
+    "EndpointMaxInstanceCount": "6",
+    "EndpointInstanceType": "ml.m5.xlarge",
+    "TargetInvocationsPerInstance": "70",
+    "SamplingPercentage": "20",
+    "EnableDataCapture": "true",
+    "AlarmEmail": "",
+    "BaselineConstraintsUri": "",
+    "BaselineStatisticsUri": "",
+    "ModelMonitorImageUri": ""
   }
 }

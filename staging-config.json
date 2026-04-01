@@ -2,8 +2,14 @@
   "Parameters": {
     "StageName": "staging",
     "EndpointInstanceCount": "1",
+    "EndpointMaxInstanceCount": "2",
     "EndpointInstanceType": "ml.m5.large",
+    "TargetInvocationsPerInstance": "70",
     "SamplingPercentage": "100",
-    "EnableDataCapture": "true"
+    "EnableDataCapture": "true",
+    "AlarmEmail": "",
+    "BaselineConstraintsUri": "",
+    "BaselineStatisticsUri": "",
+    "ModelMonitorImageUri": ""
   }
 }
