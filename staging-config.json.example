@@ -1,0 +1,15 @@
+{
+  "Parameters": {
+    "StageName": "staging",
+    "EndpointInstanceCount": "1",
+    "EndpointMaxInstanceCount": "2",
+    "EndpointInstanceType": "ml.m5.large",
+    "TargetInvocationsPerInstance": "70",
+    "SamplingPercentage": "100",
+    "EnableDataCapture": "true",
+    "AlarmEmail": "ml-team@example.com",
+    "BaselineConstraintsUri": "s3://my-mlops-bucket/baseline-output/constraints.json",
+    "BaselineStatisticsUri": "s3://my-mlops-bucket/baseline-output/statistics.json",
+    "ModelMonitorImageUri": "156813124566.dkr.ecr.us-east-1.amazonaws.com/sagemaker-model-monitor-analyzer:latest"
+  }
+}
